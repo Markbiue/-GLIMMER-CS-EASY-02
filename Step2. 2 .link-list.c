@@ -133,9 +133,8 @@ int delete_node(LinkList Head,int n){
 //反转函数
 //单链表反转
 void up_side_down(LinkList Head){
-     if (Head->next == NULL || Head->next->next == NULL) {
+     if (Head->next == NULL || Head->next->next == NULL)
         return;
-    }
     LinkList p = Head -> next;
     LinkList q = p -> next;
     while(q){
